@@ -4,14 +4,17 @@ Version v0.462
 ```
 ### CRUDS. CREATE READ UPDATE DELETE.
 
-## What does it mean SYSTEM TO PRODUCT MANAGEMENT?
+## What does it mean STPM?
 
 It means that you can control your products and monitor taxes, discounts and profits.
 
-## Tools used to make this project
+## it Responsive?
+Yes, For Phone, Desktop and iPad
+
+## Tools
 - HTML
 - CSS
-- JAVASCRIPT
+- JAVASCRIPT (in development)
 
 # END
 
