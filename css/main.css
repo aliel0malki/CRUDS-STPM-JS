@@ -1,0 +1,201 @@
+:root {
+    --main-color: #1134a6;
+}
+/* Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.992px {
+    padding: 10px;
+}
+@media (min-width: 970px) {
+    .992px {
+        padding: 30px;
+    }
+}
+.hov:hover {
+    padding: 15px;
+    transition: 0.3s;
+}
+/* Global Rules */
+/* Start Degsin */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #333;
+}
+/* Spcial Components */
+.cust-input {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #1134a6;
+}
+.placeholder::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+/* Heading */
+.crud .head {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Inputs */
+.crud .inputs {
+    width: 100%;
+}
+.inp-name-product {
+    background-color: #111;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #1134a6;
+}
+.inp-name-product::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+/* Flex Inputs */
+
+.crud .inputs .flex-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.crud .inputs .flex-inputs input {
+    width: calc(100% / 5);
+    opacity: 1;
+}
+.crud .inputs .total-price {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.crud .inputs .total-price span {
+    color: green;
+    font-size: 30px;
+}
+/* Media Query */
+@media (max-width: 767px) {
+    .crud .inputs .flex-inputs input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .crud .inputs .flex-inputs div {
+        background-color: #222;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+.crud .inputs .other-inputs input {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Search Section */
+.outputs .search .search-input {
+    width: 100%;
+    margin-top: 30px;
+}
+.outputs .flex-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.outputs .search-btn {
+    background-color: var(--main-color);
+    color: white;
+    width: calc(99% / 2);
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #222;
+}
+/* Table CSS */
+
+table {
+    width: 100%;
+    font-size: 8px;
+    margin: 30px 0px;
+    text-align: center;
+    color: white;
+}
+table .btn {
+    color: white;
+    padding: 0px;
+}
+
+/* Media Table */
+@media (max-width: 488px) {
+    table {
+        width: 100%;
+        font-size: 8px;
+        text-align: center;
+        color: white;
+        margin: 30px 0px;
+    }
+    table .btn {
+        color: white;
+        padding: 0px 5px;
+        font-size: 2px;
+        margin: 0;
+    }
+}
+@media (min-width: 760px) {
+    table {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin: 30px 0px;
+    }
+    table .btn {
+        color: white;
+        padding: 8px 10px;
+    }
+}
+@media (min-width: 992px) {
+    table {
+        width: 100%;
+        margin: 30px 0px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    table .btn {
+        color: white;
+        padding: 10px 20px;
+    }
+}
+@media (min-width: 1024px) {
+    table {
+        width: 100%;
+        margin: 30px 0px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    table .btn {
+        color: white;
+        padding: 10px 20px;
+    }
+}
