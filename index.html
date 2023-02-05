@@ -26,7 +26,11 @@
             <div class="head">
                 <div class="container">
                     <h1>CRUDS</h1>
-                    <h6>CRUDS System to Product Management</h6>
+                    <h6>SYSTEM TO PRODUCT MANAGEMENT</h6>
+                    <hr />
+                    <h6 id="refresh" style="color: red; padding: 0; margin: 0; display: none">
+                        -- Refresh --
+                    </h6>
                     <hr />
                 </div>
             </div>
@@ -47,29 +51,34 @@
                             type="number"
                             placeholder="Price"
                             id="price"
+                            onkeyup="getTotal()"
                         />
                         <input
                             class="992px cust-input placeholder"
                             type="number"
                             placeholder="Ads"
                             id="ads"
+                            onkeyup="getTotal()"
                         />
                         <input
                             class="992px cust-input placeholder"
                             type="number"
                             placeholder="Tax"
                             id="tax"
+                            onkeyup="getTotal()"
                         />
                         <input
                             class="992px cust-input placeholder"
                             type="number"
                             placeholder="Discount"
-                            id="dis"
+                            id="discount"
+                            onkeyup="getTotal()"
                         />
                     </div>
                     <div class="total-price">
                         Total is :
-                        <span id="total_price">00.00</span><span>EG</span>
+                        <span style="color: red" id="total_price">00.00</span
+                        ><span>$</span>
                     </div>
                     <div class="other-inputs">
                         <input
@@ -109,21 +118,21 @@
                             class="992px cust-input placeholder search-input"
                             placeholder="Search.."
                             type="text"
-                            id="search-bar"
+                            id="search_bar"
                         />
                     </div>
                     <div class="flex-buttons">
                         <button
                             class="hov 992px btn search-btn"
                             type="submit"
-                            id="search-title"
+                            id="search_title"
                         >
                             Search Title
                         </button>
                         <button
                             class="992px btn search-btn"
                             type="submit"
-                            id="search-category"
+                            id="search_category"
                         >
                             Search Category
                         </button>
@@ -133,57 +142,31 @@
                             type="submit"
                             id="delete_all"
                         >
-                            Delete All (<span>0</span>)
+                            Delete All (<span id="num_pro">0</span>)
                         </button>
                     </div>
-                    <table>
-                        <tr>
-                            <th>id</th>
-                            <th>title</th>
-                            <th>price</th>
-                            <th>taxes</th>
-                            <th>ads</th>
-                            <th>discount</th>
-                            <th>total</th>
-                            <th>category</th>
-                            <th>update</th>
-                            <th>delete</th>
-                        </tr>
-                        <tbody>
+                    <div class="div-table">
+                        <table>
                             <tr>
-                                <td>1</td>
-                                <th>IPhone</th>
-                                <th>22000</th>
-                                <th>660</th>
-                                <th>1650</th>
-                                <th>199</th>
-                                <th>28030</th>
-                                <th>Mobile</th>
-                                <th>
-                                    <button
-                                        style="background-color: #1134a6"
-                                        class="btn"
-                                        id="update"
-                                    >
-                                        Update
-                                    </button>
-                                </th>
-                                <th>
-                                    <button
-                                        style="background-color: #1134a6"
-                                        class="btn"
-                                        id="delete"
-                                    >
-                                        Delete
-                                    </button>
-                                </th>
+                                <th>id</th>
+                                <th>title</th>
+                                <th>price</th>
+                                <th>taxes</th>
+                                <th>ads</th>
+                                <th>discon</th>
+                                <th>total</th>
+                                <th>category</th>
+                                <th>update</th>
+                                <th>delete</th>
                             </tr>
-                        </tbody>
-                    </table>
+                            <tbody id="tbody"></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Project.Js -->
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -16,7 +16,7 @@
     }
 }
 .hov:hover {
-    padding: 15px;
+    padding: 10px 15px;
     transition: 0.3s;
 }
 /* Global Rules */
@@ -131,70 +131,83 @@ body {
     border: 2px solid #222;
 }
 /* Table CSS */
-
-table {
+.div-table {
     width: 100%;
-    font-size: 8px;
-    margin: 30px 0px;
+    overflow-x: auto;
+    scrollbar-color: #444;
+    scrollbar-width: 3px;
+}
+.div-table table {
+    width: 100%;
     text-align: center;
     color: white;
+    font-size: 14px;
+    margin: 30px 0px;
+    text-transform: uppercase;
 }
-table .btn {
+.div-table table .btn {
     color: white;
-    padding: 0px;
+    padding: 8px 10px;
 }
-
+th,
+tr {
+    padding: 5px;
+}
 /* Media Table */
-@media (max-width: 488px) {
-    table {
+@media (max-width: 468px) {
+    .div-table table {
         width: 100%;
-        font-size: 8px;
+        font-size: 10px;
         text-align: center;
         color: white;
         margin: 30px 0px;
     }
-    table .btn {
+    .div-table table .btn {
         color: white;
-        padding: 0px 5px;
-        font-size: 2px;
+        padding: 5px 10px;
+        font-size: 7px;
         margin: 0;
     }
 }
-@media (min-width: 760px) {
-    table {
+@media (min-width: 762px) {
+    .div-table table {
         width: 100%;
         text-align: center;
         color: white;
         font-size: 15px;
         margin: 30px 0px;
     }
-    table .btn {
+    .div-table table .btn {
         color: white;
         padding: 8px 10px;
     }
+    th,
+    tr {
+        padding: 5px;
+    }
 }
 @media (min-width: 992px) {
-    table {
+    .div-table table {
         width: 100%;
         margin: 30px 0px;
         text-align: center;
         color: white;
         font-size: 20px;
     }
-    table .btn {
+    .div-table table .btn {
         color: white;
         padding: 10px 20px;
     }
 }
 @media (min-width: 1024px) {
-    table {
+    .div-table table {
         width: 100%;
         margin: 30px 0px;
         text-align: center;
         color: white;
         font-size: 20px;
     }
-    table .btn {
+    .div-table table .btn {
         color: white;
         padding: 10px 20px;
     }
