@@ -2,7 +2,7 @@
 ```
 Version v0.726
 ```
-### CRUDS. CREATE READ UPDATE DELETE.
+### CRUDS. CREATE READ UPDATE DELETE SEARCH
 
 ## What does it mean STPM?
 
