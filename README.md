@@ -1,6 +1,6 @@
 # CRUDS
 ```
-Version v0.462
+Version v0.726
 ```
 ### CRUDS. CREATE READ UPDATE DELETE.
 
