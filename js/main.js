@@ -10,7 +10,6 @@ let cont = document.querySelector("#cont");
 let category = document.querySelector("#category");
 let create_btn = document.querySelector("#create");
 // Section Three
-
 let search_bar = document.querySelector("#search_bar");
 let search_title_btn = document.querySelector("#search_title");
 let search_category_btn = document.querySelector("#search_category");
@@ -85,6 +84,7 @@ delete_all_btn.addEventListener("click", () => {
     dataPro.splice(0);
     showData();
     document.querySelector("#refresh").style.display = "block";
+    location.reload();
 });
 
 // Function Clear Inputs
