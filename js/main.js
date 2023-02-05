@@ -84,7 +84,10 @@ delete_all_btn.addEventListener("click", () => {
     dataPro.splice(0);
     showData();
     document.querySelector("#refresh").style.display = "block";
-    window.location.reload();
+    scroll({
+    top:0,
+    behavior: "smooth",
+    });
 });
 
 // Function Clear Inputs
