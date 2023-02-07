@@ -1,6 +1,6 @@
 # CRUDS
 ```
-Version v0.726
+Version v0.867
 ```
 ### CRUDS. CREATE READ UPDATE DELETE SEARCH
 
@@ -15,6 +15,9 @@ Yes, For Phone, Desktop and iPad
 - HTML
 - CSS
 - JAVASCRIPT (in development)
+
+## New Features 
+Best Performance 100% 👌
 
 # END
 
