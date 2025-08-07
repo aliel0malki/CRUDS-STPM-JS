@@ -1,27 +1,18 @@
-# CRUDS
-```
-Version v0.867
-```
-### CRUDS. CREATE READ UPDATE DELETE SEARCH
+# CRUDS system 
 
-## What does it mean STPM?
+```STPM```
+SYSTEM TO PRODUCT MANAGEMENT 
 
-It means that you can control your products and monitor taxes, discounts and profits.
+feats: control your products and monitor taxes, discounts and profits.
 
-## it Responsive?
-Yes, For Phone, Desktop and iPad
+Responsive Ui, for Phone, Desktop and iPad
 
-## Tools
+## tech
 - HTML
 - CSS
-- JAVASCRIPT (in development)
+- JAVASCRIPT
 
-## New Features 
-Best Performance 100% 👌
 
-# END
 
-If you liked the project or helped you, make me happy by clicking on a STAR.
-```
-console.log("star");
-```
+
+...in the sake of learning 
